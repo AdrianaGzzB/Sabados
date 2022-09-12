@@ -9,3 +9,4 @@
 // 9.	calcular el precio del carrito
 // 10.	crear todos los elementos del contenedor de productos
 // 11.	crear todos los elementos del carrito de productos
+//crear mi proyecto
