@@ -20,11 +20,15 @@ header {
     margin-bottom: 20px;
 }
 h1 {
-    color: royalblue;
+    color: rgb(242, 149, 220);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
 }
+h3 {
+    color: white;
+}
+
 #boton-carrito {
     border: none;
     color: royalblue;
@@ -42,8 +46,9 @@ h1 {
 
 p {
     line-height: 1.8;
+    color: white;
 }
-.producto {
+.producto { /*clase de CSS*/
     max-width: 20%;
     padding: 10px;
     margin: 10px;
