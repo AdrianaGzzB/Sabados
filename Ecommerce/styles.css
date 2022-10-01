@@ -29,11 +29,16 @@ h3 {
     color: white;
 }
 
+span {
+    background: rgb(242, 149, 220);
+    color: black;
+}
+
 #boton-carrito {
-    border: none;
-    color: royalblue;
+    border-radius: 10px ;
     font-size: 40px;
-    background-color: white;
+    background: rgb(242, 149, 220);
+    padding: 5px;
 }
 
 #contenedor-productos {
@@ -58,13 +63,21 @@ p {
     font-weight: 700;
 }
 .boton-agregar {
-    background-color: royalblue;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
+    background: rgb(242, 149, 220);
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
     padding: 5px;
-    border: none;
+    border-radius: 10px;
 }
+
+i {
+    background: rgb(242, 149, 220);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 
 .modal-contenedor {
     position: fixed;
@@ -103,9 +116,9 @@ p {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: royalblue;
+    color:black;
     border: none;
-    background-color: white;
+    background-color: rgb(242, 149, 220);
 }
 
 .productoEnCarrito {

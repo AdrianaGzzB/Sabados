@@ -60,7 +60,7 @@ stockProductos.forEach((producto) => {
     div.insertAdjacentHTML("beforeend", "<h3>" + producto.nombre + "</h3>");
     div.insertAdjacentHTML("beforeend", "<p>" + producto.desc + "</p>");
     div.insertAdjacentHTML("beforeend", "<p class='precioProducto'>Precio: $" + producto.precio + "</p>");
-    div.insertAdjacentHTML("beforeend", "<button id=agregar" + producto.id + " class='boton-agregar'>Agregar <i class='fas fa-shopping-cart'></i></button>");
+    div.insertAdjacentHTML("beforeend", "<button id=agregar" + producto.id + " class='boton-agregar'>Agregar<i class='fas fa-shopping-cart'></i></button>");
     contenedorProductos.appendChild(div);
     const boton = document.getElementById("agregar" + producto.id);
     boton.addEventListener('click', () => {
