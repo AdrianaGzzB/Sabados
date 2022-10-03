@@ -11,21 +11,26 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="stock.js"></script>
     <script defer src="app.js"></script>
-    <script defer src="modal.js"></script>
+    <script defer src="modal.js" ></script> 
+    <!--el defer lo carga hasta al ultimo-->
 </head>
 <body>
     <header>
         <h1 id="titulo" class="titulo">CCastle</h1>
         <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        
     </header>
 
     <main id="contenedor-productos">
-
-
+        <!--Mediante el script del app.js voy a llenar dinamicamente todos los productos con su Html con este contenedor-->
     </main>
-    <div class="modal-contenedor"> 
+    <!--Ventana modal
+        Ventana emergente, se enfoca en el contenido dinamico, lo relevante,es que lo de atras se congela hasta que no des respuesta a esa ventana.
+         Codigo estatico(amarrado):si se tienen que hacer cambios se tendra que mover todo 
+         Codigo Dinamico: algo que no esta fijo. Creamos componentes,dentro de ellos cambiamos lo que tiene dentro libremente -->
+        <div class="modal-contenedor"> 
         <div class="modal-carrito"> 
-            <h3>Carrito Productos</h3> 
+            <h3>Carrito</h3> 
              <!--h3 class="h3">Carrito</h3--> 
             <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button> 
             <div id="carrito-contenedor"> </div> 

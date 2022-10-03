@@ -101,7 +101,7 @@ const ActulizarCarrito= () => {
     //5.Actualizar la cantidad del carrito
     //6.Calculamos el precio total del carrito
     //7.Guardamos en el localStorage el carrito
-    const contendorCarrito=document.getElementById('carrito-contenedor')
+    const contenedorCarrito=document.getElementById('carrito-contenedor')
     const contadorCarrito=document.getElementById('contadorCarrito')
     contadorCarrito.innerText=carrito.length   //cambioandole el valor que esta dentro
     //el reduce te regresa un solo valor, hace operaciones con los valores de un arreglo y te regresa un solo valor
@@ -111,7 +111,7 @@ const ActulizarCarrito= () => {
     //el 0 es el inicio del acumulador (acc) este puede empezar segun el requerimiento por lo regular es en 0
     //con el reduce vas ahorrar codigo, es la manera de simplificar un for,if
     const precioTotal=carrito.reduce((acc,prod)=>acc+prod.cantidad*prod.precio, 0)
-    contadorCarrito.innerHTML=''
+    contenedorCarrito.innerHTML=''
     carrito.forEach((producto)=>{
         const div=document.createElement('div')
         div.classList.add('productoEnCarrrito')
