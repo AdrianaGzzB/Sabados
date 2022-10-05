@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background:url(./img/fnegro.jpg);
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: url(./img/fnegro.jpg);
 }
 img {
     width: 100%;
@@ -20,24 +20,26 @@ header {
     margin-bottom: 20px;
 }
 h1 {
-    color: rgb(242,149,220);
+    color: rgb(242, 149, 220);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
 }
-h3{
-    color:white;
+h3 {
+    color: white;
 }
-/*span{
-    background-color: rgb(242,149,220);
+h3 .carrito{
     color:black;
-}*/
-#boton-carrito {
-    border: none;
+}
+span {
+    background: rgb(242, 149, 220);
     color: black;
+}
+
+#boton-carrito {
+    border-radius: 10px ;
     font-size: 40px;
-    background-color: rgb(242,149,220);
-    border-radius: 15px;
+    background: rgb(242, 149, 220);
     padding: 5px;
 }
 
@@ -47,14 +49,13 @@ h3{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: black;
 }
 
 p {
     line-height: 1.8;
-    color:white;
+    color: white;
 }
-.producto {
+.producto { /*clase de CSS*/
     max-width: 20%;
     padding: 10px;
     margin: 10px;
@@ -64,13 +65,21 @@ p {
     font-weight: 700;
 }
 .boton-agregar {
-    background-color: rgb(242,149,220);
+    background: rgb(242, 149, 220);
     color: black;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 900;
     padding: 5px;
     border-radius: 10px;
 }
+
+i {
+    background: rgb(242, 149, 220);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 
 .modal-contenedor {
     position: fixed;
@@ -93,7 +102,7 @@ p {
 
 .modal-carrito {
     position: relative;
-    background-color: rgb(242,149,220);
+    background-color: white;
     min-width: 500px;
     padding: 20px;
     margin-top: -100%;
@@ -109,9 +118,9 @@ p {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: black;
+    color:black;
     border: none;
-    background-color:rgb(242,149,220);
+    background-color: rgb(242, 149, 220);
 }
 
 .productoEnCarrito {
@@ -125,8 +134,8 @@ p {
 }
 
 .boton-eliminar {
-    background-color:rgb(242,149,220);
-    color: red;
+    background-color:rgb(242, 149, 220);
+    color: black;
     border: none;
     font-size: 20px;
 }
